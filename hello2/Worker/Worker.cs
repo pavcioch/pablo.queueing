@@ -24,6 +24,13 @@ namespace Worker
                     autoDelete: false,
                     arguments: null);
 
+                channel.ExchangeDeclare(
+                    exchange: "task_exchange",
+                    type: "direct"
+                );
+
+                channel.QueueBind("task_queue", "task_exchange", "task");
+
                 channel.BasicQos(
                     prefetchSize: 0,
                     prefetchCount: 1,
@@ -57,10 +64,11 @@ namespace Worker
                     Console.WriteLine("-----------------------------------------------");
                 };
 
-                channel.BasicConsume(
+                channel.BasicConsume(                    
                     queue: "task_queue", 
                     autoAck: false,
-                    consumer: consumer);
+                    consumer: consumer
+                );
 
                 Console.WriteLine(" Press [enter] to exit.");
                 Console.ReadLine();

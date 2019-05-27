@@ -22,6 +22,11 @@ namespace NewTask
                     autoDelete: false,
                     arguments: null);
 
+                channel.ExchangeDeclare(
+                    exchange: "task_exchange",
+                    type: "direct"
+                );
+                
                 var parsedArgs = ParseArgs();
                 var messageObject = new MessageAck
                 {
@@ -38,8 +43,8 @@ namespace NewTask
                 ConsoleLogger.Log($"start BasicPublish '{messageJson}'");
 
                 channel.BasicPublish(
-                    exchange: "",
-                    routingKey: "task_queue",
+                    exchange: "task_exchange",
+                    routingKey: "task",
                     basicProperties: properties,
                     body: body);
 

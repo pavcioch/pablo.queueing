@@ -16,6 +16,13 @@ Docs
 - tutorials source: https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/dotnet
 - management Http Api: https://rawcdn.githack.com/rabbitmq/rabbitmq-management/v3.7.15/priv/www/api/index.html 
 
+Types of exchange:
+- default : exchange = "", routingKey=<queue_name>
+- direct : exchange = <exchange_name>, binding by [queue_name, exchange_name, routingKey], BasicPublish: use exchange_name && routingKey
+- fanout : exchange = <exchange_name>, binding by [queue_name, exchange_name], BasicPublish: use exchange_name
+- topic : 
+- headers
+
 
 
 
