@@ -1,0 +1,2 @@
+@03:55:16.386 >  [*] Waiting for messages.
+ Press [enter] to exit.

@@ -5,9 +5,9 @@ using pablo.queueing.common;
 using pablo.queueing.common.Model;
 using RabbitMQ.Client;
 
-namespace Send
+namespace EmitLog
 {
-    class Send
+    class EmitLog
     {
         static void Main(string[] args)
         {
@@ -18,12 +18,10 @@ namespace Send
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(
-                    queue: "hello",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null );
+                channel.ExchangeDeclare(
+                    exchange: "logs",
+                    type: "fanout"
+                );
 
                 var parsedArgs = ParseArgs();
                 var messageObject = new MessageBase
@@ -38,8 +36,8 @@ namespace Send
                 ConsoleLogger.Log($"start BasicPublish '{messageJson}'");
 
                 channel.BasicPublish(
-                    exchange: "",
-                    routingKey: "hello",
+                    exchange: "logs",
+                    routingKey: "",
                     basicProperties: null,
                     body: body);
 
@@ -49,7 +47,7 @@ namespace Send
 
             string ParseArgs()
             {
-                return args.Length == 0 || string.IsNullOrWhiteSpace(args[0]) ? DEFAULT_MESSAGE : args[0].Trim();                    
+                return args.Length == 0 || string.IsNullOrWhiteSpace(args[0]) ? DEFAULT_MESSAGE : args[0].Trim();
             }
         }
     }

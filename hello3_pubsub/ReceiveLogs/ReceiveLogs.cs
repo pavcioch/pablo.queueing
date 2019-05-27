@@ -7,9 +7,9 @@ using System;
 using System.Text;
 using System.Threading;
 
-namespace Receive
+namespace ReceiveLogs
 {
-    class Receive
+    class ReceiveLogs
     {
         static void Main(string[] args)
         {
@@ -18,17 +18,26 @@ namespace Receive
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(
-                    queue: "hello",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null);
+                channel.ExchangeDeclare(exchange: "logs", type: "fanout");
+
+                var queueName = ParseArgs();
+                if (queueName == null)
+                {
+                    queueName = channel.QueueDeclare().QueueName;
+                }
+                else
+                {
+                    channel.QueueDeclare(queue: queueName);
+                }
+
+                channel.QueueBind(queue: queueName, exchange: "logs", routingKey: ""); //fanout - routingKey is ignored anyway
+
+
 
                 var consumer = new EventingBasicConsumer(channel);
 
                 consumer.Received += (sender, e) =>
-                {                    
+                {
                     var messageJson = Encoding.UTF8.GetString(e.Body);
                     var bodyObj = JsonConvert.DeserializeObject<MessageBase>(messageJson);
 
@@ -39,15 +48,25 @@ namespace Receive
                 };
 
                 channel.BasicConsume(
-                    queue: "hello",
+                    queue: queueName,
                     autoAck: true,
                     consumer: consumer);
 
                 Console.WriteLine("Press any key to terminate ...");
                 Console.ReadKey();
-                    
+
+                string ParseArgs()
+                {
+                    if(args.Length == 0)
+                    {
+                        return null;
+                    }
+
+                    return args[0].Trim();
+                }
+
             }
-            
+
         }
     }
 }

@@ -5,10 +5,18 @@ Install:
 4. enable ManagementUI plugin:
    RUN: C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.15\sbin> rabbitmq-plugins enable rabbitmq_management
 
-Defaults
+Defaults:
 rabbitMQ server: http://localhost:15672
 user: guest
 pwd: guest
+
+
+Docs
+- official tutorials: https://www.rabbitmq.com/tutorials/
+- tutorials source: https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/dotnet
+- management Http Api: https://rawcdn.githack.com/rabbitmq/rabbitmq-management/v3.7.15/priv/www/api/index.html 
+
+
 
 
 

@@ -1,0 +1,85 @@
+Press any key to terminate ...
+@03:20:15.886 > Received '{"Payload":"albiion"}'
+@03:20:20.887 > Processed '{"Payload":"albiion"}'
+-----------------------------------------------
+@03:20:20.887 > Received '{"Payload":"albiion2"}'
+@03:20:25.888 > Processed '{"Payload":"albiion2"}'
+-----------------------------------------------
+@03:20:25.888 > Received '{"Payload":"albiion244"}'
+@03:20:30.888 > Processed '{"Payload":"albiion244"}'
+-----------------------------------------------
+@03:20:30.889 > Received '{"Payload":"albiion244"}'
+@03:20:35.889 > Processed '{"Payload":"albiion244"}'
+-----------------------------------------------
+@03:20:35.889 > Received '{"Payload":"albiion244"}'
+@03:20:40.889 > Processed '{"Payload":"albiion244"}'
+-----------------------------------------------
+@03:20:40.890 > Received '{"Payload":"albiion246"}'
+@03:20:45.891 > Processed '{"Payload":"albiion246"}'
+-----------------------------------------------
+@03:20:45.891 > Received '{"Payload":"albiion247"}'
+@03:20:50.891 > Processed '{"Payload":"albiion247"}'
+-----------------------------------------------
+@03:20:50.891 > Received '{"Payload":"albiion247"}'
+@03:20:55.892 > Processed '{"Payload":"albiion247"}'
+-----------------------------------------------
+@03:20:55.892 > Received '{"Payload":"albiion240"}'
+@03:21:00.892 > Processed '{"Payload":"albiion240"}'
+-----------------------------------------------
+@03:21:00.892 > Received '{"Payload":"albiion249"}'
+@03:21:05.893 > Processed '{"Payload":"albiion249"}'
+-----------------------------------------------
+@03:21:05.893 > Received '{"Payload":"albiion255"}'
+@03:21:10.894 > Processed '{"Payload":"albiion255"}'
+-----------------------------------------------
+@03:21:10.894 > Received '{"Payload":"albiion244"}'
+@03:21:15.894 > Processed '{"Payload":"albiion244"}'
+-----------------------------------------------
+@03:21:26.239 > Received '{"Payload":"albiion2447"}'
+@03:21:31.240 > Processed '{"Payload":"albiion2447"}'
+-----------------------------------------------
+@03:21:31.240 > Received '{"Payload":"albiion2449"}'
+@03:21:36.240 > Processed '{"Payload":"albiion2449"}'
+-----------------------------------------------
+@03:21:36.240 > Received '{"Payload":"albiion24488"}'
+@03:21:41.240 > Processed '{"Payload":"albiion24488"}'
+-----------------------------------------------
+@03:21:41.241 > Received '{"Payload":"albiion244667"}'
+@03:21:46.241 > Processed '{"Payload":"albiion244667"}'
+-----------------------------------------------
+@03:21:46.241 > Received '{"Payload":"albiion2477"}'
+@03:21:51.241 > Processed '{"Payload":"albiion2477"}'
+-----------------------------------------------
+@03:21:51.241 > Received '{"Payload":"albiion65gg"}'
+@03:21:56.242 > Processed '{"Payload":"albiion65gg"}'
+-----------------------------------------------
+@03:21:56.242 > Received '{"Payload":"albiiontt"}'
+@03:22:01.243 > Processed '{"Payload":"albiiontt"}'
+-----------------------------------------------
+@03:22:01.243 > Received '{"Payload":"albiion77"}'
+@03:22:06.244 > Processed '{"Payload":"albiion77"}'
+-----------------------------------------------
+@03:22:06.244 > Received '{"Payload":"albii55"}'
+@03:22:11.245 > Processed '{"Payload":"albii55"}'
+-----------------------------------------------
+@03:22:11.245 > Received '{"Payload":"albi44"}'
+@03:22:16.246 > Processed '{"Payload":"albi44"}'
+-----------------------------------------------
+@03:22:16.246 > Received '{"Payload":"algg"}'
+@03:22:21.246 > Processed '{"Payload":"algg"}'
+-----------------------------------------------
+@03:22:21.246 > Received '{"Payload":"aerter"}'
+@03:22:26.247 > Processed '{"Payload":"aerter"}'
+-----------------------------------------------
+@03:22:26.247 > Received '{"Payload":"aert10"}'
+@03:22:31.248 > Processed '{"Payload":"aert10"}'
+-----------------------------------------------
+@03:22:31.248 > Received '{"Payload":"aert101"}'
+@03:22:36.249 > Processed '{"Payload":"aert101"}'
+-----------------------------------------------
+@03:22:36.249 > Received '{"Payload":"aert102"}'
+@03:22:41.249 > Processed '{"Payload":"aert102"}'
+-----------------------------------------------
+@03:22:41.249 > Received '{"Payload":"aert103"}'
+@03:22:46.250 > Processed '{"Payload":"aert103"}'
+-----------------------------------------------
