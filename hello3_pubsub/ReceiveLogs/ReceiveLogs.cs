@@ -42,7 +42,7 @@ namespace ReceiveLogs
                     var bodyObj = JsonConvert.DeserializeObject<MessageBase>(messageJson);
 
                     ConsoleLogger.Log($"Received '{messageJson}'");
-                    Thread.Sleep(5000);
+                    Thread.Sleep(10000);
                     ConsoleLogger.Log($"Processed '{messageJson}'");
                     Console.WriteLine("-----------------------------------------------");
                 };
