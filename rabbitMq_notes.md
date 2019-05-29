@@ -18,7 +18,7 @@ Docs
 
 Types of exchange:
 - default : exchange = "", routingKey=<queue_name>
-- direct : exchange = <exchange_name>, binding by [queue_name, exchange_name, routingKey], BasicPublish: use exchange_name && routingKey
+- direct : exchange = <exchange_name>, binding by [queue_name, exchange_name, routingKey], BasicPublish: use exchange_name && routingKey, good for load balancing
 - fanout : exchange = <exchange_name>, binding by [queue_name, exchange_name], BasicPublish: use exchange_name
 - topic : 
 - headers
